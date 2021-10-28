@@ -1,0 +1,198 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css">
+    <script src="https://kit.fontawesome.com/ed1bb2446d.js" crossorigin="anonymous"></script>
+    <title>How do Websites Work? -D EV</title>
+</head>
+<body class="body">
+
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+        <div class="header-1">
+            <img src="/imagenes/logo.png" alt="img" class="logo">
+            <input type="text" placeholder="Search..." class="input"> 
+            
+        </div>
+        <div class="header-2">
+            <div class="login">Log in</div>
+            <div class="create">Create Account</div>
+        </div>
+        </div>
+    </header>
+
+
+
+    <!-- Cuerpo  -->
+    <div class="page-conteiner-principal">
+    <div class="page-container">
+        <div class="page-container-1">
+            <div class="container-icon">
+                <i class="far fa-heart icon"></i>
+            <p class="number">3</p>
+            <i class="fas fa-satellite-dish icon"></i>
+            <p class="number">1</p>
+            <i class="fas fa-address-book icon"></i>
+            <p class="number">6</p>
+            </div>
+            
+
+        </div>
+        <div class="page-container-2">
+            <img src="/imagenes/portada.jpg" alt="img" class="portada">
+
+            <div class="main-text">
+                <div class="Josh-container">
+                <img src="/imagenes/josh.jpeg" alt="img" class="josh">
+                <p class="name">Josh <br>Poster On 25 oct.</p>
+                </div>
+            </div>
+            <div class="container-text">
+                Last week I went over the basics of the hardware and protocols that allow the internet to function. In this second part of the series I am going to deep dive into the steps that go into displaying a website so that we can better understand the protocols in place. The steps are:
+                <ul>
+                    <li>DNS Query</li>
+                    <li>TCP Handshake</li>
+                    <li>TLS Handshake</li>
+                    <li>HTTP Request</li>
+                    <li>HTTP Response</li>
+                </ul>
+                <p>A DNS query is your computers way of taking a domain name and finding the correct IP address of the site you are trying to visit. A request is sent to a DNS resolver chosen by the user which then queries the IP address from its DNS servers and returns it to the client that sent the request. The default DNS resolver is usually your internet service provider. The URL is broken up into different servers such as a Top Level Domain (TLD) server which would contain directories for each .com extension. This example is known as a recursive DNS query whereas a non-recursive query follows the same procedure but the DNS client (user’s computer) will take on the responsibilities of the resolver and directly ask the servers itself.</p>
+                <img src="/imagenes/complete-dns.png" alt="img" class="container-img">
+                <p>A TCP handshake is a way of establishing a connection with the host destination. It is a three-way handshake used to synchronize and acknowledge the packet transmission before the process starts. The client initiates the transfer by sending a a Synchronize message used to establish a connection and advise of the sequence numbers used to keep track of the packets being sent over. The host server then responds back with an acknowledge message. The last message is another acknowledge message sent back to the server and then the connection is established. After the connection is completed a FIN message is sent to the server to disconnect the session.</p>
+                <img src="/imagenes/Client-Server.jpeg" alt="img" class="container-img">
+                <p>The next step in the process is the TLS handshake. TLS is an encryption protocol for internet communication. It is the evolution of the previous protocol used, SSL. The steps of the handshake are to first specify which version of TLS will be used. Next is to establish the cipher suites utilized. Third, authentication of the server through the server’s public key and the SSL certificate authority’s digital signature. Lastly, generate session keys to use symmetric encryption for the duration of the connection. This is a generalized version of the exchange which is broken up into more steps and is dependent on the key exchange algorithm and cipher suites supported. See this link for more information.
+
+                 <br>
+                <br>
+                The last two steps to view a web page are HTTP requests and responses. HTTP is a protocol used to request and receive information from a web server. A request is sent with a method it wishes the server to perform and relevant information needed in order to execute that action. Common request methods are GET, POST, and UPDATE. A GET method asks the server for the information at the provided URL in the header. Your browser will send a GET method in order to get the HTML and CSS for a website to render. Once the request is received by the server it will send a response back as a status code. Status code 200 means the request is OK and the server starts sending over packets of data. Click here for a list of request methods and here for status codes.
+                <br>
+                <br>                   
+                What I have provided is a high overview of how an internet web page is rendered. Each section has a lot more you can spend time researching if you choose to do so. Below I have provided links to the resources I used to write the post. I hope you learned something and if you did please feel free to like the post or leave a comment below. Have a great week and happy programming!</p>
+                
+                <section class="resources"> <h2>Resources:</h2>
+                    <article class="article">
+                    - DNS Query:
+                    <ol>
+                    <li><a href="#">https://www.cloudns.net/wiki/article/254/</a> </li>
+                    <li><a href="#"> https://smallbusiness.chron.com/primary-secondary-dns-65413.html</a></li>
+                    <li><a href="#">https://smallbusiness.chron.com/domain-name-system-dns-resolvers-work-76639.html</a></li>
+                    </ol>
+                    </article>
+                    <article class="article">
+                    - TCP Handshake
+                    <ol>
+                    <li><a href="#">https://www.guru99.com/tcp-3-way-handshake.html</a></li>
+                    </ol>
+                    </article>
+
+                    <article class="article">
+                    - TLS Handshake
+                    <ol>
+                    <li><a href="#">https://www.cloudflare.com/learning/ssl/what-happens-in-a-tls-handshake/</a></li>
+                    </ol>
+                    </article>
+                    <article class="article">
+                    - HTTP Request/Response:
+                    <ol>
+                    <li><a href="#">https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods</a></li>
+                    <li><a href="#">https://developer.mozilla.org/en-US/docs/Web/HTTP/Status</a></li>
+                    </ol>
+                    </article>
+                </section>
+                <div class="discussion">
+                    <p class="discussiontitle">Discussion</p>
+                    <div class="dev">
+                        <img src="/imagenes/logo.png" alt="img" class="img-dev">
+                        <input class="input-rec"  type="text" placeholder="Add to the discussion">
+                    </div>
+                    <div class="bhav">
+                        <img src="/imagenes/ce243d6f-ec37-4fc6-bfb7-39b02cf128bc.jpeg" alt="img" class="img-dev">
+                        <div class="rec" >
+                            <p class="bhav-text">Bhavyashah  Oct 26 Edited on Oct 26</p>
+                            <p class="bhav-result">Thnaks for Sharing</p>
+                        </div>
+                    </div>
+                    <p class="textdiscussion">Some comments have been hidden by the post's author - find out more
+    
+                        Code of Conduct • Report abuse</p>
+                </div>
+            </div>
+            <div class="page-container-4">
+                <div class="red">Read next</div>
+                <div class="red-container">
+                    <img src="/imagenes/1.jpeg" alt="img" class="red-img">
+                    <div class="red-text">
+                        <article><h3>How I started my Opensource journey with just 1 line of code!</h3>
+                            <p>Saharsh Laud - Oct26</p>
+                        </article></div>
+                </div>
+                <div class="red-container">
+                    <img src="/imagenes/2.jpeg" alt="img" class="red-img">
+                    <div class="red-text"><h3>Replacing characters in a string using Python</h3>
+                    <p>hrishikesh1990 - Oct 26</p></div>
+                </div>
+                <div class="red-container">
+                    <img src="/imagenes/3.jpeg" alt="img" class="red-img">
+                    <div class="red-text"><h3>20+ JavaScript Utilities to Boost Your Porudctivity As a Developer</h3>
+                    <p>Olubisi -Oct 26</p></div>
+                </div>
+                <div class="red-container">
+                    <img src="/imagenes/4.jpeg" alt="img" class="red-img">
+                    <div class="red-text"><h3>Javascript Tutorial Series</h3>
+                    <p>Liftoff-KA -Oct 26</p></div>
+                </div>
+             </div>
+        </div>
+        
+        <div class="page-container-3">
+            <div class="positionstiky">
+            <div class="rectangulo-1-2">
+            <div class="rectangulo"> </div>
+            <img src="/imagenes/josh.jpeg" alt="img" class="josh-1">
+            <p class="text-perfil">Josh</p>
+            <div class="follow"><p class="text-follow">Follow</p></div>
+            <p class="text-Hello">Hello! I am a Computer Science student currently programming in Java.</p>
+            <p class="text-location">LOCATION</p>
+            <p class="text-direction">Portland, OR</p>
+            <p class="text-location">JOINED</p>
+            <p class="text-direction">20 de abr. de 2020</p>
+            </div>
+
+            <div class="rectangulo-2">
+                <div class="perfil-1-1">
+                    <p>More from Josh</p>
+                </div>
+                <div  class="perfil-1-2">
+                <p class="perfil-1-2-title">How does the Internet Work?</p>
+                <p class="perfil-1-2-text">#beginners #webdev #todaylearned</p>
+                </div>
+                <div  class="perfil-1-2">
+                    <p class="perfil-1-2-title">Lambda Expressions in Java</p>
+                    <p  class="perfil-1-2-text">#java    #beginners     #computerscience    #programming</p>
+                </div>
+                <div  class="perfil-1-2">
+                    <p class="perfil-1-2-title">Implementing Threading with Java</p>
+                    <p  class="perfil-1-2-text">#jave #tutorial #computerscience #beginners</p>
+                </div>
+            </div>
+           </div>
+        </div>
+    </div>
+</div>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-text">
+        <div class="footer-1">DEV Community  – A constructive and inclusive social network for software developers. With you every step of your journey.</div>
+        <div class="footer-2">Built on Forem  — the open source software that powers  DEV and other inclusive communities. Made with love and Ruby on Rails.DEV Community © 2016 - 2021.</div>
+        </div>
+        <div class="footer-img"><i class="fas fa-fan"></i></div>
+    </footer>
+</body>
+</html>
