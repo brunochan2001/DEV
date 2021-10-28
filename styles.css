@@ -401,6 +401,9 @@ font-size: 10px;
     text-align: center;
     margin-top: 10px;
 }
+.red{
+    font-size: 20px;
+}
 
 
 
@@ -817,6 +820,9 @@ font-size: 10px;
         padding-left: 40px;
         padding-right: 40px;
         
+        }
+        .red{
+            font-size: 30px;
         }
         .red-container{
             background-color: #fff;
