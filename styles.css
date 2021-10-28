@@ -55,9 +55,10 @@ border-bottom: solid 1px #333;
 .login{
     color: #3b49df;
     margin-right: 30px;
-    padding: 5px 3px;
+    padding: 10px 3px;
     border-radius: 7px;
-    font-size: 13px;
+    font-size: 11px;
+    width: 30%;
 }
 .login:hover{
     background-color: #f9f9f9;
@@ -289,16 +290,18 @@ font-size: 10px;
                 
                 
                 top: 25px;
-                left: 10%;
+                left: 15%;
                 border-radius: 50%;
             }
             .text-perfil{
+            
             padding-top: 10px;
-            padding-left: 90px;
+            padding-left: 20%;
             font-size: 26px;
             
             }
             .follow{
+                
                 display: block;
                 background-color: #333;
                 text-align: center;
@@ -404,7 +407,7 @@ font-size: 10px;
 /* Ojala funcione */
 
 
-    @media screen and (min-width:1024px){
+    @media screen and (min-width:1193px){
 
         *{
             box-sizing: border-box;
