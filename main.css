@@ -3,6 +3,7 @@
     margin: 0;
     box-sizing: border-box;
 }
+
 .page-container{
     margin-top: 56px;
     overflow: hidden;
@@ -173,13 +174,14 @@
 
 /* CONTENEDOR DE DISCUSSION */
 .discussion{
-    
+    font-family: 'Roboto', sans-serif;
     margin-bottom: 16px;
     border-top-width:1px ;
     border-style: solid;
     border-color: #efefef;
     line-height: 1.5;
     padding: 0.75rem;
+    
 }
 .discussiontitle{
     display: flex;
@@ -193,13 +195,230 @@
     color: #242424;
     line-height: 1.25;
 }
+
 .discussionbutton-1{
    display: block;
     border-radius: 0.375rem;
-    box-shadow: rgba (0,0,0,0.05);
     font-size: 16px;
+    color: #090909;
+    padding: 10px 16px;
+    background-color:#fff;
+    border: 3px solid #efefef;
+    box-shadow: rgba(0,0,0,0.05);
+}
+.dev{
+    font-size: 16px;
+    display: flex;
+    margin-top: 16px;
+    justify-content: space-between;
+}
+.img-dev{
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 100%;
+}
+.input-rec{
+    display: flex;
+    flex: 1 auto;
+    margin-left: 10px;
+    font-size: 16px;
+    height:60px;
+    width:302px;
+    padding:0.5rem;
+    border: 1px solid #d6d6d7;
+    border-radius: 0.375rem;
+}
+.bhav{
+    display: flex;
+    padding-top: 30px;
+}
+.rec{
+    margin-left: 10px;
+    border: 1px solid #d6d6d7;
+    border-radius: 0.375rem;
+    width:302px;
+    height: 100px;
+    padding:0.5rem;
+}
+.bhav-text{
+    font-weight: 500;
+    font-size: 0.875rem;
+    color: #717171;
+
+}
+.put{
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    color: #717171;
+    font-size: 0.875rem;
+}
+.bhav-result{
+    font-size: 16px;
+}
+.discussion-button{
+    margin-left: 35px;
+    margin-top: 7px;
+    display: flex;
+}
+.head-2{
+    margin-right: 0.25rem;
+    border-width: 0px;
+    background-color: transparent;
     color: #3d3d3d;
-    padding: 6px 14px;
-    background-color: rgba(0, 0, 0, 0.035);
+    font-size: 0.875rem;
+    display: flex;
+}
+.head-2-numbers{
+    margin-top: 5px;
+    margin-left: 3px;
+}
+.mens-2{
+    margin-right: 0.25rem;
+    border-width: 0px;
+    background-color: transparent;
+    color: #3d3d3d;
+    font-size: 0.875rem;
+}
+.textdiscussion-1{
+    text-align: center;
+    font-size: 0.875rem;
+    margin-bottom: 16px;
+    color: #717171;
+    margin-top: 20px;
+}
+.textdiscussion-1-2{
+    color: #3b49df;
+}
+.textdiscussion-2{
+    text-align: center;
+    font-size: 0.875rem;
+    color: #717171;
+}
+
+
+/* READ NEXT */
+.page-container-4{
+    font-family: 'Roboto', sans-serif;
+    padding: 12px;
+
+}
+.red{
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #242424;
+    line-height: 1.25;
+}
+.red-container{
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+.red-img{
+    border-radius: 100%;
+    width: 48px;
+    height: 48px;
+}
+.red-text{
+    padding-top: 0.25rem;
+    margin-left: 16px;
+}
+.red-title{
+    line-height: 1.25;
+    font-size: 20px;
+    margin-bottom: 0;
+    font-weight: 700;
+    color: #242424;
+}
+
+
+
+/* PRIMER PERFIL  */
+
+.rectangulo-1-2{
+    font-family: 'Roboto', sans-serif;
+    border-top-color: #010b1b;
+    color: #242424;
+    border-top: 2rem solid #010b1b;
+    padding: 16px;
     
+}
+.rectangulo1-2-title{
+    margin-top: -28px;
+    display: flex;
+}
+.josh-1{
+    border-radius: 50%;
+
+}
+.text-perfil{
+    margin-top: 24px;
+    margin-left: 10px;
+}
+.follow{
+    width: 100%;
+    padding: 8px 16px;
+    color: #f9f9f9;
+    background-color: #3B49DF;
+    border-radius: 0.375rem;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5rem;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+.text-Hello{
+    font-family: 'Roboto', sans-serif;
+    color: #575757;
+    font-size: 16px;
+
+}
+.text-location{
+    font-family: 'Roboto', sans-serif;
+    color: #717171;
+    font-size: 0.75rem;
+    font-weight: 700;
+    margin-top: 15px;
+
+
+}
+.text-direction{
+    font-family: 'Roboto', sans-serif;
+    color: #242424;
+    font-size: 1rem;
+    margin-top: 5px;
+}
+
+/* SEGUNDO PERFIL */
+.rectangulo-2{
+    background-color: #f9f9f9;
+    color: #242424;
+    box-shadow: 0 0 0 1px rgba(9,9,9,0.05);
+    border-radius: 5px;
+    font-size: 16px;
+    
+}
+.perfil-1-1{
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: #242424;
+    line-height: 1.25;
+    padding: 16px;
+
+}
+.perfil-1-2{
+    padding: 16px 0;
+    border-bottom: 1px solid #efefef;
+    border-top: 1px solid #efefef;
+    padding: 16px;
+    
+}
+
+.perfil-1-2-text{
+    color: #575757;
+    padding-top: 4px;
+    word-spacing: 3px;
+    
+   
 }
