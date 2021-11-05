@@ -1,0 +1,107 @@
+@media screen and (min-width:768px){
+    .page-container{
+        padding: 8px;
+        display: grid;
+        grid-template-columns: 64px calc(100%-64px);
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "notificaciones main"
+        "notificaciones main-2";
+        background-color: #efefef;
+    }
+    
+    .page-container-1{
+        grid-area: "notificaciones";
+        position: relative;
+        flex-direction: column;
+        height: 100%;
+        justify-content: flex-start;
+        background-color: #efefef;
+        
+        border:none;
+        box-shadow: none;
+    }
+    .page-container-2{
+        grid-area: "main";
+        background-color: #efefef;
+        
+        border-radius: 5px;
+        
+    }
+    .portada{
+        border-radius: 5px 5px 0 0;
+    }
+    .main-text{
+        padding: 32px 48px 0;
+        background-color: #fff;
+    }
+    .layout768{
+        padding: 0px 48px 0;
+        background-color: #fff;
+        margin-top: 0px;
+    }
+    /* DISCUSSION */
+    .discussion{
+        font-family: 'Roboto', sans-serif;
+        margin-bottom: 0px;
+        border-top-width:0px ;
+        border-style: none;
+        border-color: #efefef;
+        line-height: 1.5;
+        border-top: 1px solid rgba(9,9,9,0.1);
+        border-bottom:1px solid rgba(9,9,9,0.1);
+        background-color: #fff;   
+        padding: 32px 48px;     
+    }
+    /* READ-NEXT */
+    .page-container-4{
+        background-color: #F9F9F9;
+        padding: 32px 48px;
+        margin-top: 15px;
+        border-radius: 5px;
+    }
+    .red-img{
+        width: 64px;
+        height: 64px;
+
+    }
+    .red-text{
+        font-size: 20px;
+
+    }
+    .red-text-1{
+        font-size: 16px;
+        padding-top: 4px;
+        opacity: 0.75;
+        color: #242424;
+    }
+
+    /* PRIMER PERFIL */
+    .one-perfil{
+        margin-top: 20px;
+        background-color: #F9F9F9;
+        border-radius: 5px;
+    }
+    .rectangulo-1-2{
+        border-radius: 5px;
+
+    }
+    /* SEGUNDO PERFIL */
+    .rectangulo-2{
+        margin-top: 20px;
+        border-radius: 5px;
+
+    }
+    .perfil-1-1{
+        
+        font-size: 20px;
+
+    }
+
+    /* FOOTER */
+    .footer-0{
+        margin-bottom: 0px;
+    }
+    
+}
+
