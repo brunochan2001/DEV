@@ -3,7 +3,6 @@
     margin: 0;
     box-sizing: border-box;
 }
-
 .footer-0{
     font-family: 'Roboto', sans-serif;
     background-color: #d6d6d7;
@@ -14,7 +13,6 @@
     font-size: 0.875rem;
     margin-bottom: 45px;
 }
-
 .footer-img{
     display: none;
 }

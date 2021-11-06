@@ -7,7 +7,6 @@
 .active1024px{
     display: none;
 }
-
 .page-container{
     margin-top: 56px;
     overflow: hidden;
@@ -18,13 +17,10 @@
 .page-container-2{
     background-color: #efefef;
 }
-
 .portada{
     width: 100%;
     max-height: 322px;
 }
-
-
 .main-text{
     padding: 12px;
     padding: 12px 12px 0;
@@ -45,14 +41,12 @@
     font-size: 16px;
     font-weight: 700;
     font-family: 'Roboto', sans-serif;
-
 }
 .Poster-1{
     font-size: 12px;
     color: #717171;
     font-family: 'Roboto', sans-serif;
     font-weight: lighter;
-
 }
 .layout1024{
     background-color: #efefef;
@@ -76,10 +70,7 @@
     font-family: 'Roboto', sans-serif;
     text-decoration: none;
     color: #717171;
-    font-size: 14px;
-
-
-    
+    font-size: 14px;  
 }
 .color-2{
     padding-top: 15px;
@@ -96,9 +87,7 @@
     font-size: 12px;
     background-color:#f9f9f9;
     color: #3b49df;
-    border-radius: 5px 5px 0 0;
-    
-    
+    border-radius: 5px 5px 0 0;    
 }
 .one-rect-1{
     display: flex;
@@ -134,23 +123,19 @@
 .blue{
     background-color: #3B49DF;
     color: #fff;
-
 }
 .black{
     color: #090909;
     font-weight: 700;
 }
 /* CONTENEDOR DEL PARRAFO DE LA LETRA */
-
 .container-text{
-    
     font-family: 'Roboto', sans-serif;
     padding: 12px;
     font-size: 1.125rem;
     line-height: 1.5;
     padding-top: 18px ;
     background-color: #fff;
-    
 }
 .container-img{
     width: 100%;
@@ -161,19 +146,14 @@
     font-family: 'Roboto', sans-serif;
     margin-top: 15px;
     margin-bottom: 15px;
-
     padding-left: 20px;
-    
 }
-
-
 /* CONTENEDOR RESOURCES */
 .resources{
     font-family: 'Roboto', sans-serif;
     line-height: 1.5;
     font-size: 1.125rem;
-    margin-top: 15px;
-    
+    margin-top: 15px;   
 }
 .article{
     margin-top: 18px;
@@ -186,12 +166,8 @@
 }
 .resources-list-1{
     color: #3b49df;
-
     font-size: 17px;
 }
-
-
-
 /* CONTENEDOR DE DISCUSSION */
 .discussion{
     font-family: 'Roboto', sans-serif;
@@ -213,7 +189,6 @@
     color: #242424;
     line-height: 1.25;
 }
-
 .discussionbutton-1{
    display: block;
     border-radius: 0.375rem;
@@ -222,7 +197,7 @@
     padding: 10px 16px;
     background-color:#fff;
     border: 3px solid #efefef;
-    box-shadow: rgba(0,0,0,0.05);
+    
 }
 .dev{
     font-size: 16px;
@@ -311,15 +286,12 @@
     font-size: 0.875rem;
     color: #717171;
 }
-
-
 /* READ NEXT */
 .page-container-4{
     font-family: 'Roboto', sans-serif;
     padding: 12px;
     margin-top: 20px;
     background-color: #f9f9f9;
-
 }
 .red{
     font-size: 1.25rem;
@@ -331,7 +303,6 @@
     display: flex;
     margin-top: 20px;
     margin-bottom: 20px;
-
 }
 .red-img{
     border-radius: 100%;
@@ -349,11 +320,7 @@
     font-weight: 700;
     color: #242424;
 }
-
-
-
 /* PRIMER PERFIL  */
-
 .rectangulo-1-2{
     font-family: 'Roboto', sans-serif;
     border-top-color: #010b1b;
@@ -363,7 +330,6 @@
     margin-top: 15px;
     border-bottom: 1px solid #f9f9f9;
     background-color: #f9f9f9;
-    
 }
 .rectangulo1-2-title{
     margin-top: -28px;
@@ -394,7 +360,6 @@
     font-family: 'Roboto', sans-serif;
     color: #575757;
     font-size: 16px;
-
 }
 .text-location{
     font-family: 'Roboto', sans-serif;
@@ -402,16 +367,12 @@
     font-size: 0.75rem;
     font-weight: 700;
     margin-top: 15px;
-
-
 }
-
 @media screen and (min-width:640px){
     .text-perfil{
         font-size: 1.25rem;
         font-weight: 700;
     }
-
 }
 .text-direction{
     font-family: 'Roboto', sans-serif;
@@ -419,7 +380,6 @@
     font-size: 1rem;
     margin-top: 5px;
 }
-
 /* SEGUNDO PERFIL */
 .rectangulo-2{
     background-color: #f9f9f9;
@@ -443,9 +403,7 @@
     border-bottom: 1px solid #efefef;
     border-top: 1px solid #efefef;
     padding: 16px;
-    
 }
-
 .perfil-1-2-text{
     color: #575757;
     padding-top: 4px;
@@ -456,10 +414,6 @@
         font-size: 1.25rem;
     }
 }
-
-
-
-
 /* NOTIFICACIONES */
 .position-sticky{
     position: fixed;
@@ -475,9 +429,7 @@
     align-items: center;
     justify-content: space-around;
     font-size: 16px;
-    height: 56px;
-    
-    
+    height: 56px;    
 }
 .page-1-button-1{
     border:none;
@@ -485,7 +437,6 @@
     padding: 0;
     font-size: 100%;
     display: flex;
-    
 }
 .button-1-svg{
     padding: 0.5rem;

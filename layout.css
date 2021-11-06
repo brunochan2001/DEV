@@ -2,7 +2,7 @@
     .page-container{
         padding: 8px;
         display: grid;
-        grid-template-columns: 640px calc(100%-640px);
+        grid-template-columns: 64px repeat(1,1fr);
         grid-template-rows: auto;
         grid-template-areas: 
         "notificaciones main"
@@ -11,34 +11,27 @@
     }
     
     .position-sticky{
-        grid-area: "notificaciones";
+        grid-area: notificaciones;
         position: relative;
         flex-direction: column;
         height: 100%;
         justify-content: flex-start;
         background-color: #efefef;
         border:none;
-        box-shadow: none;
-        
+        box-shadow: none;    
     }
     .page-1-button-1{
         flex-direction: column;
         margin-bottom: 10px;  
     }
-    
     .text-1-svg{
-    
     margin-top: 0;
     margin-left: 15px;
     }
-
-
     .page-container-2{
-        grid-area: "main";
+        grid-area: main;
         background-color: #efefef;
-        
-        border-radius: 5px;
-        
+        border-radius: 5px;  
     }
     .portada{
         border-radius: 5px 5px 0 0;
@@ -46,6 +39,12 @@
     .main-text{
         padding: 32px 48px 0;
         background-color: #fff;
+    }
+    .how-do{
+        font-weight: bolder;
+        font-family: 'Roboto', sans-serif;
+        font-size: 2.25rem;
+        font-weight: 800;
     }
     .layout768{
         padding: 0px 48px 0;
@@ -72,14 +71,17 @@
         margin-top: 15px;
         border-radius: 5px;
     }
+    .red{
+        font-size: 1.5rem;
+        line-height: 1.5;
+        font-weight: 700;
+    }
     .red-img{
         width: 64px;
         height: 64px;
-
     }
     .red-text{
         font-size: 20px;
-
     }
     .red-text-1{
         font-size: 16px;
@@ -87,7 +89,6 @@
         opacity: 0.75;
         color: #242424;
     }
-
     /* PRIMER PERFIL */
     .one-perfil{
         margin-top: 20px;
@@ -96,20 +97,15 @@
     }
     .rectangulo-1-2{
         border-radius: 5px;
-
     }
     /* SEGUNDO PERFIL */
     .rectangulo-2{
         margin-top: 20px;
         border-radius: 5px;
-
     }
     .perfil-1-1{
-        
         font-size: 20px;
-
     }
-
     /* FOOTER */
     .footer-0{
         margin-bottom: 0px;
@@ -119,13 +115,9 @@
         margin-top: 10px;
         display: block;
     }
-    
 }
-
 /* PARA 1024PX EN ADELANTE */
-
 @media screen and (min-width:1024px){
-
 .page-container{
     display: grid;
     grid-template-columns: 12% 60% 28%;
@@ -135,22 +127,14 @@
 }
 .position-sticky{
     grid-area: noti;
-
 }
-
 .page-container-2{
-    grid-area: main;
-    
+    grid-area: main;   
     margin-right: 20px;
-    
 }
 .layout1024{
     max-width: 806px;
-    /* margin-left: 400px; */
 }
-
-
-
 /* Todos los perfiles  */
 .one-perfil{
     max-width: 345px;
@@ -168,9 +152,13 @@
     display: block;
     margin-top: -20px;
 }
+.footer-0{
+    padding: 64px 144px;
 }
-
-
+.footer-2{
+    margin-top: 15px;
+}
+}
 /* PARA 1390PX */
 @media screen and (min-width:1450px){
     .page-container{
@@ -182,17 +170,15 @@
     }
     .page-container-2{
         grid-area: main;
-          
         margin-right: 20px;
     }
     .active1024px{
-            grid-area: perfiles;
-            display: block;
-            margin-top: -20px;
+        grid-area: perfiles;
+        display: block;
+        margin-top: -20px;
     }
     .page-container-1{
         grid-area: noti;
         
     }
-
 }
