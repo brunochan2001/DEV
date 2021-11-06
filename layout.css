@@ -2,7 +2,7 @@
     .page-container{
         padding: 8px;
         display: grid;
-        grid-template-columns: 64px calc(100%-64px);
+        grid-template-columns: 640px calc(100%-640px);
         grid-template-rows: auto;
         grid-template-areas: 
         "notificaciones main"
@@ -17,10 +17,23 @@
         height: 100%;
         justify-content: flex-start;
         background-color: #efefef;
-        
         border:none;
         box-shadow: none;
     }
+    .page-1-button-1{
+        flex-direction: column;
+        margin-bottom: 10px;
+        
+       
+    }
+    
+    .text-1-svg{
+    
+    margin-top: 0;
+    margin-left: 15px;
+    }
+
+
     .page-container-2{
         grid-area: "main";
         background-color: #efefef;
@@ -101,7 +114,59 @@
     /* FOOTER */
     .footer-0{
         margin-bottom: 0px;
+        padding: 48px;
+    }
+    .footer-img{
+        margin-top: 10px;
+        display: block;
     }
     
 }
 
+/* PARA 1024PX EN ADELANTE */
+
+@media screen and (min-width:1024px){
+
+.page-container{
+    display: grid;
+    grid-template-columns: 12% 60% 28%;
+    grid-template-areas: "noti main perfiles";
+    margin-right: auto;
+    margin-left: auto;
+}
+.page-container-1{
+    grid-area: noti;
+    background-color: cadetblue;
+}
+
+.page-container-2{
+    grid-area: main;
+    background-color: blueviolet;   
+    margin-right: 20px;
+    
+}
+.layout1024{
+    max-width: 806px;
+    /* margin-left: 400px; */
+}
+
+
+
+/* Todos los perfiles  */
+.one-perfil{
+    max-width: 345px;
+}
+.rectangulo-2{
+    max-width: 345px;
+}
+ /* DESACTIVO  */
+.page-container-3{
+    display: none;
+}
+/* ACTIVO */
+.active1024px{
+    grid-area: perfiles;
+    display: block;
+    margin-top: -20px;
+}
+}

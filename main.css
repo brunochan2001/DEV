@@ -3,6 +3,10 @@
     margin: 0;
     box-sizing: border-box;
 }
+/* DESACTIVAR IMPORTANTE */
+.active1024px{
+    display: none;
+}
 
 .page-container{
     margin-top: 56px;
