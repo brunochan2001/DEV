@@ -136,12 +136,12 @@
 }
 .page-container-1{
     grid-area: noti;
-    background-color: cadetblue;
+
 }
 
 .page-container-2{
     grid-area: main;
-    background-color: blueviolet;   
+    
     margin-right: 20px;
     
 }
@@ -169,4 +169,31 @@
     display: block;
     margin-top: -20px;
 }
+}
+
+
+/* PARA 1390PX */
+@media screen and (min-width:1450px){
+    .page-container{
+        display: grid;
+        grid-template-columns: 11% 152px 806px 345px 11%;
+        grid-template-areas: ". noti main perfiles .";
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .page-container-2{
+        grid-area: main;
+          
+        margin-right: 20px;
+    }
+    .active1024px{
+            grid-area: perfiles;
+            display: block;
+            margin-top: -20px;
+    }
+    .page-container-1{
+        grid-area: noti;
+        
+    }
+
 }
