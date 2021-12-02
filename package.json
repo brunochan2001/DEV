@@ -1,0 +1,23 @@
+{
+  "name": "devto-article",
+  "version": "1.0.0",
+  "description": "En este proyecto demuestro mis habilidades en CSS y HTML",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "format": "prettier --write ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brunochan2001/devto-article.git"
+  },
+  "author": "Bruno Alexander Chan Yance",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brunochan2001/devto-article/issues"
+  },
+  "homepage": "https://github.com/brunochan2001/devto-article#readme",
+  "dependencies": {
+    "prettier": "^2.5.0"
+  }
+}
